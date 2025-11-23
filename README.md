@@ -7,7 +7,7 @@ oh-my-posh (cmd line styling)\
 waybar (taskbar)\
 wofi (app launcher)\
 fastfetch (fetch)\
-neovim (code editor)\
+neovim (code editor)
 
 ## additional packages used
 zoxide\
@@ -20,10 +20,10 @@ hyprshot (screenshot tool)\
 pipewire (audio)\
 zathura (pdf reader)\
 optimus manager (gpu control)\
-rog daemon (laptop power profiles), script changed\
+rog daemon (laptop power profiles), script changed
 
 ### included electron app fixes
 zen browser\
 vscode\
 discord\
-obsidian (notes)\
+obsidian (notes)
