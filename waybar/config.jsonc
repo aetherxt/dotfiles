@@ -1,0 +1,124 @@
+[{
+    "height": 40,
+    "spacing": 5, 
+
+    "modules-left": [
+        "custom/bracketl",
+        "custom/arch",
+        "custom/bracketr",
+        "custom/bracketl",
+        "battery",
+        "custom/bracketr",
+        "custom/bracketl",
+        "custom/powerprofile",
+        "custom/bracketr",
+        "custom/bracketl",
+        "clock",
+        "custom/bracketr",
+    ],
+    "modules-center": [
+        "custom/bracketl",
+        "hyprland/workspaces",
+        "custom/bracketr",
+    ],
+    "modules-right": [
+        "custom/bracketl",
+        "cpu",
+        "custom/split",
+        "memory",
+        "custom/bracketr",
+        "custom/bracketl",
+        "network",
+        "custom/split",
+        "wireplumber",
+        "custom/bracketr",
+    ],
+
+
+    "custom/bracketl": {
+        "format": "[",
+        "tooltip": false
+    },
+    "custom/bracketr": {
+        "format": "]",
+        "tooltip": false
+    },    
+    "custom/split": {
+        "format": "|",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{icon}",
+        "show-special": false,
+        "on-click": "activate",
+        "persistent-workspaces": {
+          "*": 5
+        },
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X",
+        },
+    },
+    "custom/arch": {
+        "format": "󰣇",
+        "on-click": "bash -c ~/.config/hypr/refresh_change.sh",
+        "tooltip": false,
+    },
+    "clock": {
+        "format": "{:%b %d | %H:%M}",
+        "tooltip": false,
+    },
+    "cpu": {
+        "format": "CPU:{usage}%",
+        "tooltip": false,
+        "interval": 2,
+        "on-click": "kitty -e btop -p 1",
+    },
+    "memory": {
+        "format": "RAM:{percentage}%",
+        "tooltip": false,
+        "interval": 2,
+        "on-click": "kitty -e btop -p 2",
+    },
+    "wireplumber": {
+        "format": "VOL:{volume}%",
+        "tooltip": false,
+        "format-muted": "MUTE",
+        "on-click": "kitty -e bluetui"
+    },
+    "network": {
+        "interface": "wlan0",
+        "format-wifi": "{icon}  {essid}",
+        "format-ethernet": "LAN",
+        "format-disconnected": "󰖪",
+        "tooltip-format": "{essid} ({signalStrength}%)",
+        "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+        "max-length": 15,
+        "on-click": "kitty -e impala",
+    },
+    "battery": {
+        "format": "BAT:{capacity}%",
+        "format-full": "FULL",
+        "format-charging": "CHRG:{capacity}%",
+        "format-plugged": "CHRG:{capacity}%",
+        "tooltip-format": "TIME:{time} PWR:{power:4.2f}W",
+    },
+    "custom/powerprofile": {
+        "exec": "rog-profile -g",
+        "on-click": "rog-profile -n",
+        "signal": 10,
+        "interval": 10,
+        "exec-on-event": true,
+        "tooltip": false
+    },
+}]

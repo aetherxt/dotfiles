@@ -1,0 +1,98 @@
+@define-color background #24273a;
+@define-color text #cad3f5;
+@define-color text2 #8aadf4;
+@define-color border #b4befe;
+
+* {
+    font-family: "Iosevka Nerd Font";
+    font-size: 15px;
+}
+
+#custom-bracketr
+#custom-bracketl{
+    margin: 0 5px ;
+}
+
+window#waybar {
+    background-color: transparent;
+    border-bottom: 0;
+    color: @text;
+}
+
+.modules-left {
+    margin: 10px 0 0 10px;
+    padding: 1px 10px 1px 10px;
+    background-color: @background;
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 3px;
+}
+
+.modules-center {
+    margin: 10px 0 0 0;
+    padding: 1px 10px 1px 10px;
+    background-color: @background;
+    border: 2px solid @border;
+    border-radius: 3px;
+}
+.modules-right {
+    margin: 10px 10px 0 0;
+    padding: 1px 10px 1px 10px;
+    background-color: @background;
+    border: 2px solid @border;
+    border-radius: 3px;
+}
+
+#custom-arch {
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#custom-powerprofile,
+#clock {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#workspaces {
+    margin: 0 0 0 5px;
+    padding: 0 9px ;
+    background-color: @background;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    background-color: transparent;
+    color: @text;
+    border-radius: 0;
+}
+
+#workspaces button:hover {
+    color: @text2;
+    background: #494d64;
+    box-shadow: none;
+}
+
+#workspaces button.active {
+    color: @text2;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#battery,
+#cpu,
+#memory,
+#network,
+#wireplumber {
+  padding: 0 10px ;
+}
+
