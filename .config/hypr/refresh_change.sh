@@ -7,9 +7,11 @@ STATUS=$(cat $BAT_STATUS)
 if [ "$STATUS" == "Discharging" ]; then
     hyprctl keyword monitor $MONITOR,2880x1800@60,0x0,2
     rog-panel-od -d
+    rog-profile -s quiet
     echo "60Hz"
 else
     hyprctl keyword monitor $MONITOR,2880x1800@120,0x0,2
     rog-panel-od -e
+    rog-profile -s performance
     echo "120Hz"
 fi
