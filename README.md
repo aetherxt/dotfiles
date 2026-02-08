@@ -1,23 +1,21 @@
 # dotfiles
-dotfiles for hyprland arch linux configuration
+dotfiles for my hyprland arch linux configuration
 
 ## packages configured
 kitty (terminal)\
 oh-my-posh (cmd line styling)\
 waybar (taskbar)\
-wofi (app launcher)\
+tofi (app launcher)\
 fastfetch (fetch)\
 neovim (code editor)
 
 ## additional packages used
 zoxide\
-thefuck\
 bluetui (bluetooth)\
 impala (wifi)\
 btop (activity monitor)\
-ranger\
+yazi (file manager)\
 hyprshot (screenshot tool)\
-pipewire (audio)\
 zathura (pdf reader)\
 optimus manager (gpu control)\
 rog daemon (laptop power profiles), script changed

@@ -1,0 +1,6 @@
+[default]
+duration = "1hr"
+mode = "center"
+
+[any]
+path = "~/.config/hypr/wallpaper"

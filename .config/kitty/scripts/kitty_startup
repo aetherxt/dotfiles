@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Minimum banner size
+MIN_COLS=40
+MIN_LINES=10
+
+# Get current terminal size
+cols=$(tput cols)
+lines=$(tput lines)
+
+# Draw the banner only if the terminal is large enough
+if [[ $cols -ge $MIN_COLS && $lines -ge $MIN_LINES ]]; then
+    ~/.config/kitty/scripts/kitty_banner
+fi
+
+# Now exec your real shell in login mode,
+# so that its rc files run and rebind `clear`.
+exec "$SHELL" -l

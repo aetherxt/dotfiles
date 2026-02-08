@@ -1,4 +1,5 @@
 return {
-    "folke/tokyonight.nvim",
-    opts = { style = "moon" },
+  "folke/tokyonight.nvim",
+  lazy = true,
+  opts = { style = "moon" },
 }

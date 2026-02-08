@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+IMG_DIR="$HOME/.config/kitty/scripts/images"
+images=("$IMG_DIR"/*.png)
+idx=$((RANDOM % ${#images[@]}))
+IMG="${images[$idx]}"
+
+# Clear screen
+command clear
+
+# Draw the image. Adjust size/position to taste.
+kitty +kitten icat --place 40x10@0x0 "$IMG"
+
+printf '\n\n\n\n'
