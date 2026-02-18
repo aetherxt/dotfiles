@@ -1,6 +1,10 @@
 # dotfiles
 dotfiles for my hyprland arch linux configuration
 
+## required installations
+ctOS (lockscreen animation)\
+move etc/ctos to /etc/
+
 ## packages configured
 kitty (terminal)\
 oh-my-posh (cmd line styling)\

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TSM-061/ctOS/main/schema/greeter.schema.json",
+  "user": "aether",
+  "monitor": "eDP-1",
+  "fontFamily": "JetBrainsMono Nerd Font",
+  "fakeIdentity": {
+    "id": "16940",
+    "class": "COMPSCI",
+    "fullName": "MLAW"
+  },
+  "fakeStatus": {
+    "env": "Workstation",
+    "node": "109.389.013.301"
+  },
+  "modes": {
+    "greetd": {
+      "animations": "all",
+      "exit": ["uwsm", "stop"],
+      "launch":["uwsm", "start", "hyprland.desktop"] 
+    },
+    "lockd": {
+      "animations": "all"
+    },
+    "test": {
+      "animations": "all"
+    }
+  }
+}
